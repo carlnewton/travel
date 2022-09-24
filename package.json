@@ -1,0 +1,16 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "A map of locations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carl Newton",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-terser": "^1.2.0"
+  }
+}

@@ -1,0 +1,46 @@
+#map {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.gmnoprint {
+    display: none;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+.gm-fullscreen-control {
+    display: none;
+}
+
+#stats {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#stats th, #stats td {
+    padding: 6px;
+}
+
+#stats td {
+    color: #d59563;
+}
+

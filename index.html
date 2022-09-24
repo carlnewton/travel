@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="dist/css/layout.css">
+</head>
+<body>
+    <div id="map"></div>
+    <table id="stats">
+        <tr>
+            <th>Distance</th>
+            <td id="distance"></td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td id="time"></td>
+        </tr>
+        <tr>
+            <th>Average speed</th>
+            <td id="speed"></td>
+        </tr>
+    </table>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="./dist/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3zvfceYuLNlQP4r0lRbdYIPPoN7SeIuU&callback=initMap"
+    async defer></script>
+</body>
+</html>

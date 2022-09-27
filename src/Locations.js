@@ -12,6 +12,14 @@ class Locations
                 "date": "2022-09-14"
             },
             {
+                "name": "Dubai",
+                "coordinates": {
+                    "lat": 25.253252,
+                    "lng": 55.365629,
+                },
+                "date": "2022-09-14"
+            },
+            {
                 "name": "Bangkok",
                 "coordinates": {
                     "lat": 13.690238,

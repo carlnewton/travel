@@ -35,6 +35,14 @@ class Locations
                 },
                 "date": "2022-09-22"
             },
+            {
+                "name": "Pai",
+                "coordinates": {
+                    "lat": 19.361766,
+                    "lng": 98.431362
+                },
+                "date": "2022-09-28"
+            }
         ];
     }
 }

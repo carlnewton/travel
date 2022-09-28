@@ -11,8 +11,8 @@ class Markers
 
     getBounds()
     {
-        var bounds = new google.maps.LatLngBounds()
-        for (let marker of this.markers)
+        var bounds = new google.maps.LatLngBounds();
+        for (let marker of this.markers.slice(-3))
         {
             bounds.extend(marker.position);
         }

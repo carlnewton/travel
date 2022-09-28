@@ -43,7 +43,7 @@ class Markers
             totalDistance += this.markerDistance(this.markers[i], this.markers[i-1]);
         }
 
-        document.getElementById('distance').innerText = Math.round(totalDistance) + " mi";
+        document.getElementById('distance').innerText = Math.round(totalDistance) + " miles";
 
         var firstDate = new Date(this.locations.list[0].date);
         document.getElementById('time').innerText = this.timeSince(firstDate);

@@ -62,7 +62,27 @@ class Locations
                     "lng": 98.431362
                 },
                 "date": "2022-09-28"
-            }
+            },
+            {
+                "name": "Chiang Mai",
+                "country": "Thailand",
+                "stay": true,
+                "coordinates": {
+                    "lat": 18.798743,
+                    "lng": 98.984619
+                },
+                "date": "2022-10-11"
+            },
+            {
+                "name": "Bangkok",
+                "country": "Thailand",
+                "stay": true,
+                "coordinates": {
+                    "lat": 13.917175,
+                    "lng": 100.604391
+                },
+                "date": "2022-10-12",
+            },
         ];
     }
 }

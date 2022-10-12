@@ -96,7 +96,7 @@ class Markers
         }
 
         var lastLocation = this.locations.list[this.locations.list.length - 1];
-        var lastMarker = this.getMarker(lastLocation.name);
+        var lastMarker = this.markers.at(-1);
         var _this = this;
         setInterval(function(){_this.animateMarker(lastMarker)}, 30);
     }

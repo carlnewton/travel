@@ -83,6 +83,16 @@ class Locations
                 },
                 "date": "2022-10-12",
             },
+            {
+                "name": "Vientiane",
+                "country": "Laos",
+                "stay": true,
+                "coordinates": {
+                    "lat": 17.986967,
+                    "lng": 102.567794
+                },
+                "date": "2022-10-13",
+            },
         ];
     }
 }

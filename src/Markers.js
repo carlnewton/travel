@@ -40,7 +40,9 @@ class Markers
     updateStats() {
         var totalDistance = 0;
         for (let i = 1; i < this.markers.length; i++) {
-            totalDistance += this.markerDistance(this.markers[i], this.markers[i-1]);
+            if (!this.isFuture(this.markers[i].date)) {
+                totalDistance += this.markerDistance(this.markers[i], this.markers[i-1]);
+            }
         }
 
         document.getElementById('distance').innerText = Math.round(totalDistance) + " miles";
@@ -53,9 +55,38 @@ class Markers
         document.getElementById('speed').innerText = Math.round(averageSpeed) + " mph";
     }
 
+    isFuture(date) {
+        return (new Date() - new Date(date) < 0);
+    }
+
+    getLatestMarker() {
+
+        for (let location of this.locations.list) {
+            if (!this.isFuture(location.date)) {
+                var selectedLocation = location;
+            }
+        }
+
+        for (let marker of this.markers) {
+            if (marker.name === selectedLocation.name && marker.date === selectedLocation.date) {
+                return marker;
+            }
+        }
+    }
+
     createMarkers() {
         var previousCoords = null;
         for (let location of this.locations.list) {
+            var futureLocation = this.isFuture(location.date),
+                strokeColor = '#FFFFFF',
+                labelColor = '#d59563'
+            ;
+
+            if (futureLocation) {
+                strokeColor = '#3B8686';
+                labelColor = '#3B8686';
+            }
+
             if (previousCoords) {
                 var lineCoords = [];
                 lineCoords.push(previousCoords);
@@ -63,7 +94,7 @@ class Markers
                 const flightPath = new google.maps.Polyline({
                     path: lineCoords,
                     geodesic: true,
-                    strokeColor: "#FFFFFF",
+                    strokeColor: strokeColor,
                     strokeOpacity: 0.4,
                     strokeWeight: 2,
                 });
@@ -71,12 +102,13 @@ class Markers
             }
             var marker = new google.maps.Marker({
                 name: location.name,
+                date: location.date,
                 time: Date.now(),
                 position: location.coordinates,
                 map: map,
                 label: {
                     text: location.name.toUpperCase(),
-                    color: "#d59563",
+                    color: labelColor,
                     fontSize: "14px",
                     fontWeight: "bold"
                 },
@@ -95,10 +127,9 @@ class Markers
             previousCoords = location.coordinates;
         }
 
-        var lastLocation = this.locations.list[this.locations.list.length - 1];
-        var lastMarker = this.markers.at(-1);
+        var latestMarker = this.getLatestMarker();
         var _this = this;
-        setInterval(function(){_this.animateMarker(lastMarker)}, 30);
+        setInterval(function(){_this.animateMarker(latestMarker)}, 30);
     }
 
     // Found this method on StackOverflow! Thanks Masih!

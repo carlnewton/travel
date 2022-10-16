@@ -93,6 +93,36 @@ class Locations
                 },
                 "date": "2022-10-13",
             },
+            {
+                "name": "Vang Vieng",
+                "country": "Laos",
+                "stay": true,
+                "coordinates": {
+                    "lat": 18.947304,
+                    "lng": 102.447513
+                },
+                "date": "2022-10-20",
+            },
+            {
+                "name": "Luang Prabang",
+                "country": "Laos",
+                "stay": true,
+                "coordinates": {
+                    "lat": 19.884847,
+                    "lng": 102.137962
+                },
+                "date": "2022-10-27",
+            },
+            {
+                "name": "Hanoi",
+                "country": "Vietnam",
+                "stay": true,
+                "coordinates": {
+                    "lat": 21.027463,
+                    "lng": 105.700739
+                },
+                "date": "2022-11-09",
+            },
         ];
     }
 }

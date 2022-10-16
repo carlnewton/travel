@@ -12,7 +12,7 @@ class Markers
     getBounds()
     {
         var bounds = new google.maps.LatLngBounds();
-        for (let marker of this.markers.slice(-3))
+        for (let marker of this.markers.slice(-6))
         {
             bounds.extend(marker.position);
         }
@@ -45,22 +45,75 @@ class Markers
             }
         }
 
-        document.getElementById('distance').innerText = Math.round(totalDistance) + " miles";
+        document.getElementById('distance').innerText = Math.round(totalDistance).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " miles";
 
         var firstDate = new Date(this.locations.list[0].date);
-        document.getElementById('time').innerText = this.timeSince(firstDate);
+        document.getElementById('time').innerText = this.timeBetween(firstDate, new Date());
 
         var hoursPassed = Math.floor((new Date() - firstDate) / 1000) / 3600;
         var averageSpeed = totalDistance / hoursPassed;
         document.getElementById('speed').innerText = Math.round(averageSpeed) + " mph";
+
+        document.getElementById('longest').innerText = this.getLongestStay();
+
+        var nextMarker = this.getNextMarker();
+        if (nextMarker) {
+            var timeUntil = this.timeBetween(new Date(), Date.parse(nextMarker.date))
+            document.getElementById('next').innerText = timeUntil;
+        }
+    }
+
+    getLongestStay() {
+        var longestDuration = 0;
+        var longestDurationReadable;
+        var longestStayLocation;
+        var previousLocation;
+        for (let location of this.locations.list) {
+            if (!this.isFuture(location.date)) {
+                if (previousLocation) {
+                    var duration = Date.parse(location.date) - Date.parse(previousLocation.date);
+                    if (duration > longestDuration) {
+                        longestDuration = duration;
+                        longestDurationReadable = this.timeBetween(Date.parse(previousLocation.date), Date.parse(location.date));
+                        longestStayLocation = previousLocation;
+                    }
+                }
+
+                previousLocation = location;
+            }
+        }
+
+        if (longestStayLocation) {
+            return longestDurationReadable + ' in ' + longestStayLocation.name;
+        }
     }
 
     isFuture(date) {
         return (new Date() - new Date(date) < 0);
     }
 
-    getLatestMarker() {
+    getNextMarker() {
+        for (let location of this.locations.list) {
+            if (!this.isFuture(location.date)) {
+                continue;
+            }
 
+            var selectedLocation = location;
+            break;
+        }
+
+        if (selectedLocation === undefined) {
+            return;
+        }
+
+        for (let marker of this.markers) {
+            if (marker.name === selectedLocation.name && marker.date === selectedLocation.date) {
+                return marker;
+            }
+        }
+    }
+
+    getLatestMarker() {
         for (let location of this.locations.list) {
             if (!this.isFuture(location.date)) {
                 var selectedLocation = location;
@@ -132,36 +185,36 @@ class Markers
         setInterval(function(){_this.animateMarker(latestMarker)}, 30);
     }
 
-    // Found this method on StackOverflow! Thanks Masih!
+    // Modified from a method found on StackOverflow! Thanks Masih!
     // https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
-    timeSince(date) {
-        var seconds = Math.floor((new Date() - date) / 1000);
+    timeBetween(fromDate, toDate) {
+        var seconds = Math.floor((toDate - fromDate) / 1000);
         var interval = seconds / 31536000;
         if (interval > 1) {
-            return Math.floor(interval) + " years";
+            return Math.floor(interval) + ' year' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 2592000;
         if (interval > 1) {
-            return Math.floor(interval) + " months";
+            return Math.floor(interval) + ' month' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 86400;
         if (interval > 1) {
-            return Math.floor(interval) + " days";
+            return Math.floor(interval) + ' day' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 3600;
         if (interval > 1) {
-            return Math.floor(interval) + " hours";
+            return Math.floor(interval) + ' hour' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 60;
         if (interval > 1) {
-            return Math.floor(interval) + " minutes";
+            return Math.floor(interval) + ' minute' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
-        return Math.floor(seconds) + " seconds";
+        return Math.floor(seconds) + ' second' + ((Math.floor(interval) === 1) ? '' : 's');
     }
 
     // Credit for this method goes to https://cloud.google.com/blog/products/maps-platform/how-calculate-distances-map-maps-javascript-api! Amazing work - Thanks!!

@@ -123,6 +123,16 @@ class Locations
                 },
                 "date": "2022-11-09",
             },
+            {
+                "name": "Sa Pa",
+                "country": "Vietnam",
+                "stay": true,
+                "coordinates": {
+                    "lat": 22.357358,
+                    "lng": 103.821707
+                },
+                "date": "2022-11-13",
+            },
         ];
     }
 }

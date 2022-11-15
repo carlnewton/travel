@@ -133,6 +133,16 @@ class Locations
                 },
                 "date": "2022-11-13",
             },
+            {
+                "name": "Ha Long",
+                "country": "Vietnam",
+                "stay": true,
+                "coordinates": {
+                    "lat": 20.971314,
+                    "lng": 107.044734
+                },
+                "date": "2022-11-18",
+            },
         ];
     }
 }

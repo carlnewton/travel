@@ -143,6 +143,26 @@ class Locations
                 },
                 "date": "2022-11-18",
             },
+            {
+                "name": "Hanoi",
+                "country": "Vietnam",
+                "stay": true,
+                "coordinates": {
+                    "lat": 21.027463,
+                    "lng": 105.700739
+                },
+                "date": "2022-11-22",
+            },
+            {
+                "name": "Phú Quốc",
+                "country": "Vietnam",
+                "stay": true,
+                "coordinates": {
+                    "lat": 10.299451,
+                    "lng": 103.984889
+                },
+                "date": "2022-11-23",
+            },
         ];
     }
 }

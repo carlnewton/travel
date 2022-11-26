@@ -163,6 +163,26 @@ class Locations
                 },
                 "date": "2022-11-23",
             },
+            {
+                "name": "Ho Chi Minh City",
+                "country": "Vietnam",
+                "stay": true,
+                "coordinates": {
+                    "lat": 10.833258,
+                    "lng": 106.630088
+                },
+                "date": "2022-12-03",
+            },
+            {
+                "name": "Phnom Penh",
+                "country": "Cambodia",
+                "stay": true,
+                "coordinates": {
+                    "lat": 11.582391,
+                    "lng": 104.858257
+                },
+                "date": "2022-12-07",
+            },
         ];
     }
 }

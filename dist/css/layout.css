@@ -27,6 +27,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 #stats {
+    pointer-events:none;
     position: absolute;
     top: 10px;
     right: 10px;

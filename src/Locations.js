@@ -183,6 +183,16 @@ class Locations
                 },
                 "date": "2022-12-07",
             },
+            {
+                "name": "Siem Reap",
+                "country": "Cambodia",
+                "stay": true,
+                "coordinates": {
+                    "lat": 13.366145,
+                    "lng": 103.837100
+                },
+                "date": "2022-12-10",
+            },
         ];
     }
 }

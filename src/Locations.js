@@ -193,6 +193,16 @@ class Locations
                 },
                 "date": "2022-12-10",
             },
+            {
+                "name": "Kuala Lumpur",
+                "country": "Malaysia",
+                "stay": true,
+                "coordinates": {
+                    "lat": 3.149072,
+                    "lng": 101.689837
+                },
+                "date": "2022-12-17",
+            },
         ];
     }
 }

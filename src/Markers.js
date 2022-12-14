@@ -12,7 +12,7 @@ class Markers
     getBounds()
     {
         var bounds = new google.maps.LatLngBounds();
-        for (let marker of this.markers.slice(-6))
+        for (let marker of this.markers.slice(-10))
         {
             bounds.extend(marker.position);
         }

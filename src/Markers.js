@@ -51,10 +51,9 @@ class Markers
         document.getElementById('time').innerText = this.timeBetween(firstDate, new Date());
 
         var hoursPassed = Math.floor((new Date() - firstDate) / 1000) / 3600;
-        var averageSpeed = totalDistance / hoursPassed;
-        document.getElementById('speed').innerText = Math.round(averageSpeed) + " mph";
 
-        document.getElementById('longest').innerText = this.getLongestStay();
+        document.getElementById('stayed').innerText = this.getStayedCount();
+        document.getElementById('countries').innerText = this.getUniqueCountries().length;
 
         var nextMarker = this.getNextMarker();
         if (nextMarker) {
@@ -63,33 +62,60 @@ class Markers
         }
     }
 
-    getLongestStay() {
-        var longestDuration = 0;
-        var longestDurationReadable;
-        var longestStayLocation;
-        var previousLocation;
-        for (let location of this.locations.list) {
-            if (!this.isFuture(location.date)) {
-                if (previousLocation) {
-                    var duration = Date.parse(location.date) - Date.parse(previousLocation.date);
-                    if (duration > longestDuration) {
-                        longestDuration = duration;
-                        longestDurationReadable = this.timeBetween(Date.parse(previousLocation.date), Date.parse(location.date));
-                        longestStayLocation = previousLocation;
-                    }
-                }
+    isFuture(date) {
+        return (new Date() - new Date(date) < 0);
+    }
 
-                previousLocation = location;
+    getStayedCount() {
+        let stayedCount = 0;
+
+
+        for (let location of this.getUniqueLocations()) {
+            if (this.isFuture(location.date)) {
+                continue;
+            }
+
+            if (location.stay === false) {
+                continue;
+            }
+
+            stayedCount++;
+        }
+
+        return stayedCount - 1; // Excluding home
+
+    }
+
+    getUniqueLocations() {
+        let locations = [];
+
+        locationsLoop:
+        for (let location of this.locations.list) {
+            for (let addedLocation of locations) {
+                if (
+                    location.coordinates.lat === addedLocation.coordinates.lat &&
+                    location.coordinates.lng === addedLocation.coordinates.lng
+                ) {
+                    continue locationsLoop;
+                }
+            }
+
+            locations.push(location);
+        }
+
+        return locations;
+    }
+
+    getUniqueCountries() {
+        let countries = [];
+
+        for (let location of this.locations.list) {
+            if (!countries.includes(location.country) && location.country !== 'United Kingdom') {
+                countries.push(location.country);
             }
         }
 
-        if (longestStayLocation) {
-            return longestDurationReadable + ' in ' + longestStayLocation.name;
-        }
-    }
-
-    isFuture(date) {
-        return (new Date() - new Date(date) < 0);
+        return countries;
     }
 
     getNextMarker() {
@@ -129,6 +155,7 @@ class Markers
 
     createMarkers() {
         var previousCoords = null;
+
         for (let location of this.locations.list) {
             var futureLocation = this.isFuture(location.date),
                 strokeColor = '#FFFFFF',
@@ -140,7 +167,7 @@ class Markers
                 labelColor = '#3B8686';
             }
 
-            if (previousCoords) {
+            if (previousCoords && location.hideLine !== true) {
                 var lineCoords = [];
                 lineCoords.push(previousCoords);
                 lineCoords.push(location.coordinates);

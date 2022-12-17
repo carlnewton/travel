@@ -67,6 +67,7 @@ class Locations
                 "name": "Chiang Mai",
                 "country": "Thailand",
                 "stay": true,
+                "hideLine": true,
                 "coordinates": {
                     "lat": 18.798743,
                     "lng": 98.984619
@@ -77,9 +78,10 @@ class Locations
                 "name": "Bangkok",
                 "country": "Thailand",
                 "stay": true,
+                "hideLine": true,
                 "coordinates": {
-                    "lat": 13.917175,
-                    "lng": 100.604391
+                    "lat": 13.690238,
+                    "lng": 100.750123
                 },
                 "date": "2022-10-12",
             },

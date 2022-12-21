@@ -110,7 +110,7 @@ class Markers
         let countries = [];
 
         for (let location of this.locations.list) {
-            if (!countries.includes(location.country) && location.country !== 'United Kingdom') {
+            if (!countries.includes(location.country) && location.stay === true && location.country !== 'United Kingdom') {
                 countries.push(location.country);
             }
         }

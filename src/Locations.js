@@ -205,6 +205,16 @@ class Locations
                 },
                 "date": "2022-12-17",
             },
+            {
+                "name": "Phuket",
+                "country": "Thailand",
+                "stay": true,
+                "coordinates": {
+                    "lat": 7.882328,
+                    "lng":  98.392311
+                },
+                "date": "2022-12-27",
+            },
         ];
     }
 }

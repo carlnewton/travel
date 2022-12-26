@@ -2,6 +2,7 @@ class Markers
 {
     constructor()
     {
+        this.infoWindow = null;
         this.rippleSeconds = 10;
         this.rippleSize = 100;
         this.markers = [];
@@ -110,7 +111,12 @@ class Markers
         let countries = [];
 
         for (let location of this.locations.list) {
-            if (!countries.includes(location.country) && location.stay === true && location.country !== 'United Kingdom') {
+            if (
+                !countries.includes(location.country) &&
+                location.stay === true &&
+                !this.isFuture(location.date) &&
+                location.country !== 'United Kingdom'
+            ) {
                 countries.push(location.country);
             }
         }
@@ -155,6 +161,7 @@ class Markers
 
     createMarkers() {
         var previousCoords = null;
+        var _this = this;
 
         for (let location of this.locations.list) {
             var futureLocation = this.isFuture(location.date),
@@ -182,6 +189,7 @@ class Markers
             }
             var marker = new google.maps.Marker({
                 name: location.name,
+                country: location.country,
                 date: location.date,
                 time: Date.now(),
                 position: location.coordinates,
@@ -199,8 +207,24 @@ class Markers
                 path: google.maps.SymbolPath.CIRCLE,
                 fillOpacity: 0,
                 strokeWeight: 0,
-                scale: 0
+                scale: 5
             });
+
+            google.maps.event.addListener(marker, 'click', function() {
+                if (_this.infoWindow) {
+                    _this.infoWindow.close()
+                }
+                _this.infoWindow = new google.maps.InfoWindow({
+                    content: _this.renderInfoWindowContent(this),
+                    position: this.position,
+                    ariaLabel: this.name,
+                });
+                _this.infoWindow.open({
+                    anchor: null,
+                    map,
+                });
+            });
+
             this.markers.push(marker);
             map.fitBounds(markers.getBounds());
 
@@ -208,8 +232,63 @@ class Markers
         }
 
         var latestMarker = this.getLatestMarker();
-        var _this = this;
         setInterval(function(){_this.animateMarker(latestMarker)}, 30);
+    }
+
+    renderInfoWindowContent(marker) {
+        let latlng = marker.position.toJSON();
+        let uniqueLocations = this.getUniqueLocationsForLatLng(latlng);
+
+        let content = '<h1>' + marker.name + '</h1>';
+        content += '<p><strong>Country: </strong><span class="orange">' + marker.country + '</span></p>';
+
+        for (let location of uniqueLocations) {
+            if (uniqueLocations.length > 1) {
+                content += '<hr>';
+            }
+            content += '<p><strong>Arrival: </strong><span class="orange">' + location.date + '</span></p>';
+            var nextLocation = this.getLocationAfter(location);
+            if (nextLocation) {
+                content += '<p><strong>Departure: </strong><span class="orange">' + nextLocation.date + '</span></p>';
+                let duration = this.timeBetween(Date.parse(location.date), Date.parse(nextLocation.date));
+                if (duration === '0 seconds') {
+                    duration = 'same day';
+                }
+                content += '<p><strong>Duration: </strong><span class="orange">' + duration + '</span></p>'
+            }
+        }
+
+        return content;
+    }
+
+    getLocationAfter(location) {
+        let returnNext = false;
+        for (let otherLocation of this.locations.list) {
+            if (returnNext === true) {
+                return otherLocation;
+            }
+            if (
+                location.name === otherLocation.name &&
+                location.country === otherLocation.country &&
+                location.coordinates.lat === otherLocation.coordinates.lat &&
+                location.coordinates.lng === otherLocation.coordinates.lng &&
+                location.date === otherLocation.date
+            ) {
+                returnNext = true;
+            }
+        }
+    }
+
+    getUniqueLocationsForLatLng(latlng) {
+        let validLocations = [];
+
+        for (let location of this.locations.list) {
+            if (location.coordinates.lat === latlng.lat && location.coordinates.lng === latlng.lng) {
+                validLocations.push(location);
+            }
+        }
+
+        return validLocations;
     }
 
     // Modified from a method found on StackOverflow! Thanks Masih!

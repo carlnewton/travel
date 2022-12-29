@@ -215,6 +215,16 @@ class Locations
                 },
                 "date": "2022-12-27",
             },
+            {
+                "name": "Ko Yao Noi",
+                "country": "Thailand",
+                "stay": true,
+                "coordinates": {
+                    "lat": 8.122405,
+                    "lng":  98.606299
+                },
+                "date": "2023-01-02",
+            },
         ];
     }
 }

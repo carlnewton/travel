@@ -225,6 +225,46 @@ class Locations
                 },
                 "date": "2023-01-02",
             },
+            {
+                "name": "Ao Nang",
+                "country": "Thailand",
+                "stay": true,
+                "coordinates": {
+                    "lat": 8.030061,
+                    "lng":  98.823828
+                },
+                "date": "2023-01-07",
+            },
+            {
+                "name": "Koh Samui",
+                "country": "Thailand",
+                "stay": true,
+                "coordinates": {
+                    "lat": 9.513446,
+                    "lng":  100.016862
+                },
+                "date": "2023-01-13",
+            },
+            {
+                "name": "Bangkok",
+                "country": "Thailand",
+                "stay": true,
+                "coordinates": {
+                    "lat": 13.690238,
+                    "lng": 100.750123
+                },
+                "date": "2023-01-27",
+            },
+            {
+                "name": "Osaka",
+                "country": "Japan",
+                "stay": true,
+                "coordinates": {
+                    "lat": 34.691976,
+                    "lng": 135.503544
+                },
+                "date": "2023-01-29",
+            },
         ];
     }
 }

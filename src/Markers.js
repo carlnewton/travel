@@ -13,7 +13,15 @@ class Markers
     getBounds()
     {
         var bounds = new google.maps.LatLngBounds();
-        for (let marker of this.markers.slice(-10))
+
+        let pastMarkers = [];
+        for(let marker of this.markers) {
+            if (!this.isFuture(marker.date)) {
+                pastMarkers.push(marker);
+            }
+        }
+
+        for (let marker of pastMarkers.slice(-2))
         {
             bounds.extend(marker.position);
         }

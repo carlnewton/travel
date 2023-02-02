@@ -265,6 +265,16 @@ class Locations
                 },
                 "date": "2023-01-29",
             },
+            {
+                "name": "Kyoto",
+                "country": "Japan",
+                "stay": true,
+                "coordinates": {
+                    "lat": 35.001510,
+                    "lng": 135.749081
+                },
+                "date": "2023-02-05",
+            },
         ];
     }
 }

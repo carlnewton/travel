@@ -275,6 +275,26 @@ class Locations
                 },
                 "date": "2023-02-05",
             },
+            {
+                "name": "Tokyo",
+                "country": "Japan",
+                "stay": true,
+                "coordinates": {
+                    "lat": 35.691044,
+                    "lng": 139.769722
+                },
+                "date": "2023-02-12",
+            },
+            {
+                "name": "Sydney",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -33.868797,
+                    "lng": 151.208218
+                },
+                "date": "2023-02-24",
+            },
         ];
     }
 }

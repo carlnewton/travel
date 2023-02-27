@@ -295,6 +295,36 @@ class Locations
                 },
                 "date": "2023-02-24",
             },
+            {
+                "name": "Katoomba",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -33.712851,
+                    "lng": 150.310566
+                },
+                "date": "2023-03-01",
+            },
+            {
+                "name": "Sydney",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -33.868797,
+                    "lng": 151.208218
+                },
+                "date": "2023-03-04",
+            },
+            {
+                "name": "Melbourne",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -37.809668,
+                    "lng": 144.965217
+                },
+                "date": "2023-03-05",
+            },
         ];
     }
 }

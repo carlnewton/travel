@@ -195,6 +195,12 @@ class Markers
                 });
                 flightPath.setMap(map);
             }
+
+            let locationLabel = ' ';
+            if (location.stay) {
+                locationLabel = location.name.toUpperCase();
+            }
+
             var marker = new google.maps.Marker({
                 name: location.name,
                 country: location.country,
@@ -203,7 +209,7 @@ class Markers
                 position: location.coordinates,
                 map: map,
                 label: {
-                    text: location.name.toUpperCase(),
+                    text: locationLabel,
                     color: labelColor,
                     fontSize: "14px",
                     fontWeight: "bold"

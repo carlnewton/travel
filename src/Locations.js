@@ -325,6 +325,56 @@ class Locations
                 },
                 "date": "2023-03-05",
             },
+            {
+                "name": "Geelong",
+                "country": "Australia",
+                "stay": false,
+                "coordinates": {
+                    "lat": -38.147683,
+                    "lng": 144.352822
+                },
+                "date": "2023-03-09",
+            },
+            {
+                "name": "Davenport",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -41.179704,
+                    "lng": 146.347846
+                },
+                "date": "2023-03-09",
+            },
+            {
+                "name": "Somerset",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -41.041021,
+                    "lng": 145.831793
+                },
+                "date": "2023-03-10",
+            },
+            {
+                "name": "Queenstown",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -42.081105,
+                    "lng": 145.551825
+                },
+                "date": "2023-03-12",
+            },
+            {
+                "name": "Hobart",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -42.880467,
+                    "lng": 147.328882
+                },
+                "date": "2023-03-14",
+            },
         ];
     }
 }

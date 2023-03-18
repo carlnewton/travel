@@ -375,6 +375,46 @@ class Locations
                 },
                 "date": "2023-03-14",
             },
+            {
+                "name": "Launceston",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -41.433188,
+                    "lng": 147.142942
+                },
+                "date": "2023-03-17",
+            },
+            {
+                "name": "Davenport",
+                "country": "Australia",
+                "stay": false,
+                "coordinates": {
+                    "lat": -41.179704,
+                    "lng": 146.347846
+                },
+                "date": "2023-03-21",
+            },
+            {
+                "name": "Geelong",
+                "country": "Australia",
+                "stay": false,
+                "coordinates": {
+                    "lat": -38.147683,
+                    "lng": 144.352822
+                },
+                "date": "2023-03-21",
+            },
+            {
+                "name": "Melbourne",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -37.809668,
+                    "lng": 144.965217
+                },
+                "date": "2023-03-21",
+            },
         ];
     }
 }

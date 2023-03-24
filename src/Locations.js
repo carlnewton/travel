@@ -415,6 +415,56 @@ class Locations
                 },
                 "date": "2023-03-21",
             },
+            {
+                "name": "Apollo Bay",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -38.755503,
+                    "lng": 143.668192
+                },
+                "date": "2023-03-24",
+            },
+            {
+                "name": "Warrnambool",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -38.372590,
+                    "lng": 142.478659
+                },
+                "date": "2023-03-25",
+            },
+            {
+                "name": "Stawell",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -37.055942,
+                    "lng": 142.773454
+                },
+                "date": "2023-03-26",
+            },
+            {
+                "name": "Melbourne",
+                "country": "Australia",
+                "stay": false,
+                "coordinates": {
+                    "lat": -37.809668,
+                    "lng": 144.965217
+                },
+                "date": "2023-03-28",
+            },
+            {
+                "name": "Adelaide",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -34.927051,
+                    "lng": 138.602233
+                },
+                "date": "2023-03-28",
+            },
         ];
     }
 }

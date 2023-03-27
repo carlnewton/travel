@@ -465,6 +465,26 @@ class Locations
                 },
                 "date": "2023-03-28",
             },
+            {
+                "name": "Alice Springs",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -23.697860,
+                    "lng": 133.880666
+                },
+                "date": "2023-04-01",
+            },
+            {
+                "name": "Darwin",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -12.432270,
+                    "lng": 130.917687
+                },
+                "date": "2023-04-07",
+            },
         ];
     }
 }

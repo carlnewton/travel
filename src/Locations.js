@@ -485,6 +485,36 @@ class Locations
                 },
                 "date": "2023-04-07",
             },
+            {
+                "name": "Cairns",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -16.893619,
+                    "lng": 145.732039
+                },
+                "date": "2023-04-11",
+            },
+            {
+                "name": "Brisbane",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -27.495211,
+                    "lng": 153.049461
+                },
+                "date": "2023-04-15",
+            },
+            {
+                "name": "Mooloolaba",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -26.681836,
+                    "lng": 153.120533
+                },
+                "date": "2023-04-20",
+            },
         ];
     }
 }

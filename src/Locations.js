@@ -515,6 +515,26 @@ class Locations
                 },
                 "date": "2023-04-20",
             },
+            {
+                "name": "Sydney",
+                "country": "Australia",
+                "stay": true,
+                "coordinates": {
+                    "lat": -33.868797,
+                    "lng": 151.208218
+                },
+                "date": "2023-04-26",
+            },
+            {
+                "name": "Auckland",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -36.851790,
+                    "lng": 174.764450
+                },
+                "date": "2023-04-27",
+            },
         ];
     }
 }

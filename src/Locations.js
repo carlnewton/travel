@@ -535,6 +535,36 @@ class Locations
                 },
                 "date": "2023-04-27",
             },
+            {
+                "name": "Rarotonga",
+                "country": "Cook Islands",
+                "stay": true,
+                "coordinates": {
+                    "lat": -21.230702,
+                    "lng": -159.776438
+                },
+                "date": "2023-06-07",
+            },
+            {
+                "name": "Auckland",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -36.851790,
+                    "lng": 174.764450
+                },
+                "date": "2023-06-23",
+            },
+            {
+                "name": "Vancouver",
+                "country": "Canada",
+                "stay": true,
+                "coordinates": {
+                    "lat": 49.282489,
+                    "lng": -123.130942
+                },
+                "date": "2023-06-26",
+            },
         ];
     }
 }

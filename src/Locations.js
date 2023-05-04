@@ -545,6 +545,16 @@ class Locations
                 },
                 "date": "2023-05-01",
             },
+            {
+                "name": "Otorohanga",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -38.182491,
+                    "lng": 175.214997
+                },
+                "date": "2023-05-06",
+            },
             // {
             //     "name": "Rarotonga",
             //     "country": "Cook Islands",

@@ -555,6 +555,66 @@ class Locations
                 },
                 "date": "2023-05-06",
             },
+            {
+                "name": "New Plymouth",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -39.042809,
+                    "lng": 174.111826
+                },
+                "date": "2023-05-08",
+            },
+            {
+                "name": "Napier",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -39.510526,
+                    "lng": 176.879696
+                },
+                "date": "2023-05-11",
+            },
+            {
+                "name": "Cambridge",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -37.890365,
+                    "lng": 175.472965
+                },
+                "date": "2023-05-13",
+            },
+            {
+                "name": "Auckland",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -36.851790,
+                    "lng": 174.764450
+                },
+                "date": "2023-05-14",
+            },
+            {
+                "name": "Wellington",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -41.291894,
+                    "lng": 174.781377
+                },
+                "date": "2023-05-15",
+            },
+            {
+                "name": "Picton",
+                "country": "New Zealand",
+                "stay": false,
+                "coordinates": {
+                    "lat": -41.294959,
+                    "lng": 174.002559
+                },
+                "date": "2023-05-18",
+            },
             // {
             //     "name": "Rarotonga",
             //     "country": "Cook Islands",

@@ -615,6 +615,26 @@ class Locations
                 },
                 "date": "2023-05-18",
             },
+            {
+                "name": "Punakaiki",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -42.124140,
+                    "lng": 171.330621
+                },
+                "date": "2023-05-18",
+            },
+            {
+                "name": "Fox Glacier",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -43.463212,
+                    "lng": 170.007118
+                },
+                "date": "2023-05-20",
+            },
             // {
             //     "name": "Rarotonga",
             //     "country": "Cook Islands",

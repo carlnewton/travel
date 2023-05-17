@@ -76,6 +76,10 @@ function initMap()
         ]
     });
 
+    map.addListener('zoom_changed', function() {
+        markers.toggleLabels();
+    });
+
     markers.run();
 }
 

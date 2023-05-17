@@ -167,6 +167,27 @@ class Markers
         }
     }
 
+    toggleLabels() {
+        if (map.getZoom() > 5) {
+            for (let marker of this.markers) {
+                var label = marker.getLabel();
+                label.text = marker.labelText;
+                marker.setLabel(label);
+            }
+        } else {
+            for (let marker of this.markers) {
+                var label = marker.getLabel();
+                label.text = ' ';
+                marker.setLabel(label);
+            }
+        }
+
+        var latestMarker = this.getLatestMarker();
+        var label = latestMarker.getLabel();
+        label.text = latestMarker.labelText;
+        latestMarker.setLabel(label);
+    }
+
     createMarkers() {
         var previousCoords = null;
         var _this = this;
@@ -214,7 +235,8 @@ class Markers
                     fontSize: "14px",
                     fontWeight: "bold"
                 },
-                delete: false
+                delete: false,
+                labelText: locationLabel
             })
 
             marker.setIcon({

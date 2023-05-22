@@ -635,6 +635,26 @@ class Locations
                 },
                 "date": "2023-05-20",
             },
+            {
+                "name": "Wanaka",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -44.695875,
+                    "lng": 169.141689
+                },
+                "date": "2023-05-23",
+            },
+            {
+                "name": "Queenstown",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -45.028488,
+                    "lng": 168.659849
+                },
+                "date": "2023-05-24",
+            },
             // {
             //     "name": "Rarotonga",
             //     "country": "Cook Islands",

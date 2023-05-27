@@ -655,36 +655,106 @@ class Locations
                 },
                 "date": "2023-05-24",
             },
-            // {
-            //     "name": "Rarotonga",
-            //     "country": "Cook Islands",
-            //     "stay": true,
-            //     "coordinates": {
-            //         "lat": -21.230702,
-            //         "lng": -159.776438
-            //     },
-            //     "date": "2023-06-07",
-            // },
-            // {
-            //     "name": "Auckland",
-            //     "country": "New Zealand",
-            //     "stay": true,
-            //     "coordinates": {
-            //         "lat": -36.851790,
-            //         "lng": 174.764450
-            //     },
-            //     "date": "2023-06-23",
-            // },
-            // {
-            //     "name": "Vancouver",
-            //     "country": "Canada",
-            //     "stay": true,
-            //     "coordinates": {
-            //         "lat": 49.282489,
-            //         "lng": -123.130942
-            //     },
-            //     "date": "2023-06-26",
-            // },
+            {
+                "name": "Twizel",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -44.261533,
+                    "lng": 170.088743
+                },
+                "date": "2023-05-27",
+            },
+            {
+                "name": "Christchurch",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -43.530564,
+                    "lng": 172.627153
+                },
+                "date": "2023-05-31",
+            },
+            {
+                "name": "Kaikōura",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -42.397673,
+                    "lng": 173.677165
+                },
+                "date": "2023-06-03",
+            },
+            {
+                "name": "Picton",
+                "country": "New Zealand",
+                "stay": false,
+                "coordinates": {
+                    "lat": -41.294959,
+                    "lng": 174.002559
+                },
+                "date": "2023-06-06",
+            },
+            {
+                "name": "Wellington",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -41.291894,
+                    "lng": 174.781377
+                },
+                "date": "2023-06-06",
+            },
+            {
+                "name": "Auckland",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -36.851790,
+                    "lng": 174.764450
+                },
+                "date": "2023-06-07",
+            },
+            {
+                "name": "Rarotonga",
+                "country": "Cook Islands",
+                "stay": true,
+                "coordinates": {
+                    "lat": -21.230702,
+                    "lng": -159.776438
+                },
+                "date": "2023-06-08",
+            },
+            {
+                "name": "Auckland",
+                "country": "New Zealand",
+                "stay": true,
+                "coordinates": {
+                    "lat": -36.851790,
+                    "lng": 174.764450
+                },
+                "date": "2023-06-23",
+            },
+            {
+                "name": "Vancouver",
+                "country": "Canada",
+                "stay": true,
+                "coordinates": {
+                    "lat": 49.282489,
+                    "lng": -123.130942
+                },
+                "date": "2023-06-26",
+            },
+            {
+                "name": "Toronto",
+                "country": "Canada",
+                "stay": true,
+                "coordinates": {
+                    "lat": 43.656671,
+                    "lng": -79.383551
+                },
+                "date": "2023-07-01",
+            },
         ];
     }
 }

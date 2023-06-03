@@ -755,6 +755,16 @@ class Locations
                 },
                 "date": "2023-07-01",
             },
+            {
+                "name": "Paris",
+                "country": "France",
+                "stay": true,
+                "coordinates": {
+                    "lat": 48.856257,
+                    "lng": 2.350468
+                },
+                "date": "2023-07-05",
+            },
         ];
     }
 }

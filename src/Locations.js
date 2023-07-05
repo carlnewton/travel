@@ -785,6 +785,16 @@ class Locations
                 },
                 "date": "2023-07-14",
             },
+            {
+                "name": "Andorra la Vella",
+                "country": "Andorra",
+                "stay": true,
+                "coordinates": {
+                    "lat": 42.506651,
+                    "lng": 1.521610
+                },
+                "date": "2023-07-18",
+            },
         ];
     }
 }

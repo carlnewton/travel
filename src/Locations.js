@@ -763,7 +763,27 @@ class Locations
                     "lat": 48.856257,
                     "lng": 2.350468
                 },
-                "date": "2023-07-05",
+                "date": "2023-07-06",
+            },
+            {
+                "name": "Menorca",
+                "country": "Spain",
+                "stay": true,
+                "coordinates": {
+                    "lat": 39.950784,
+                    "lng": 4.106663
+                },
+                "date": "2023-07-09",
+            },
+            {
+                "name": "Barcelona",
+                "country": "Spain",
+                "stay": true,
+                "coordinates": {
+                    "lat": 41.386228,
+                    "lng": 2.171774
+                },
+                "date": "2023-07-14",
             },
         ];
     }

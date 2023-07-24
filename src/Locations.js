@@ -795,6 +795,46 @@ class Locations
                 },
                 "date": "2023-07-18",
             },
+            {
+                "name": "Toulouse",
+                "country": "France",
+                "stay": true,
+                "coordinates": {
+                    "lat": 43.604556,
+                    "lng": 1.444000
+                },
+                "date": "2023-07-23",
+            },
+            {
+                "name": "Marseille",
+                "country": "France",
+                "stay": true,
+                "coordinates": {
+                    "lat": 43.297719,
+                    "lng": 5.376516
+                },
+                "date": "2023-07-26",
+            },
+            {
+                "name": "Nice",
+                "country": "France",
+                "stay": true,
+                "coordinates": {
+                    "lat": 43.711355,
+                    "lng": 7.265168
+                },
+                "date": "2023-07-30",
+            },
+            {
+                "name": "Turin",
+                "country": "Italy",
+                "stay": true,
+                "coordinates": {
+                    "lat": 45.070835,
+                    "lng": 7.650038
+                },
+                "date": "2023-08-04",
+            },
         ];
     }
 }

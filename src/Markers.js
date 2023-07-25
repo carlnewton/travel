@@ -6,6 +6,7 @@ class Markers
         this.rippleSeconds = 10;
         this.rippleSize = 100;
         this.markers = [];
+        this.flightPaths = [];
         this.ripples = [];
         this.locations = new Locations();
     }
@@ -40,10 +41,31 @@ class Markers
         }
     }
 
+    renderVisible()
+    {
+        for (let i = 0; i < this.flightPaths.length; i++) {
+            this.flightPaths[i].setMap(null);
+
+            if (
+                map.getBounds().contains(this.flightPaths[i].getPath().getArray()[0])
+                || map.getBounds().contains(this.flightPaths[i].getPath().getArray()[1])
+            ) {
+                this.flightPaths[i].setMap(map);
+            }
+        }
+
+        for (let i = 0; i < this.markers.length; i++) {
+            this.markers[i].setMap(null);
+            if (map.getBounds().contains(this.markers[i].getPosition())) {
+                this.markers[i].setMap(map);
+            }
+        }
+    }
+
     run()
     {
         this.createMarkers();
-        this.updateStats()
+        this.updateStats();
     }
 
     updateStats() {
@@ -215,6 +237,7 @@ class Markers
                     strokeWeight: 2,
                 });
                 flightPath.setMap(map);
+                this.flightPaths.push(flightPath);
             }
 
             let locationLabel = ' ';

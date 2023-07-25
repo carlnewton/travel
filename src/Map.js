@@ -77,7 +77,12 @@ function initMap()
     });
 
     map.addListener('zoom_changed', function() {
+
         markers.toggleLabels();
+    });
+
+    map.addListener('bounds_changed', function() {
+        markers.renderVisible();
     });
 
     markers.run();

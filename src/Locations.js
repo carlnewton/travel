@@ -826,6 +826,26 @@ class Locations
                 "date": "2023-07-30",
             },
             {
+                "name": "Monaco",
+                "country": "Monaco",
+                "stay": false,
+                "coordinates": {
+                    "lat": 43.737262,
+                    "lng": 7.420659
+                },
+                "date": "2023-08-01",
+            },
+            {
+                "name": "Nice",
+                "country": "France",
+                "stay": true,
+                "coordinates": {
+                    "lat": 43.711355,
+                    "lng": 7.265168
+                },
+                "date": "2023-08-01",
+            },
+            {
                 "name": "Turin",
                 "country": "Italy",
                 "stay": true,

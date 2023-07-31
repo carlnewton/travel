@@ -835,6 +835,26 @@ class Locations
                 },
                 "date": "2023-08-04",
             },
+            {
+                "name": "Milan",
+                "country": "Italy",
+                "stay": true,
+                "coordinates": {
+                    "lat": 45.474411,
+                    "lng": 9.174470
+                },
+                "date": "2023-08-08",
+            },
+            {
+                "name": "Venice",
+                "country": "Italy",
+                "stay": true,
+                "coordinates": {
+                    "lat": 45.441533,
+                    "lng": 12.325523
+                },
+                "date": "2023-08-12",
+            },
         ];
     }
 }

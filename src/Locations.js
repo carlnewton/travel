@@ -7,6 +7,7 @@ class Locations
                 "name": "Desborough",
                 "country": "United Kingdom",
                 "stay": true,
+                "visited": false,
                 "coordinates": {
                     "lat": 52.442578,
                     "lng": -0.822131
@@ -17,6 +18,7 @@ class Locations
                 "name": "Birmingham",
                 "country": "United Kingdom",
                 "stay": false,
+                "visited": false,
                 "coordinates": {
                     "lat": 52.452804,
                     "lng": -1.743625
@@ -27,6 +29,7 @@ class Locations
                 "name": "Dubai",
                 "country": "United Arab Emirates",
                 "stay": false,
+                "visited": false,
                 "coordinates": {
                     "lat": 25.253252,
                     "lng": 55.365629,
@@ -37,6 +40,7 @@ class Locations
                 "name": "Bangkok",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 13.690238,
                     "lng": 100.750123
@@ -47,6 +51,7 @@ class Locations
                 "name": "Chiang Mai",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 18.798743,
                     "lng": 98.984619
@@ -57,6 +62,7 @@ class Locations
                 "name": "Pai",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 19.361766,
                     "lng": 98.431362
@@ -67,6 +73,7 @@ class Locations
                 "name": "Chiang Mai",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "hideLine": true,
                 "coordinates": {
                     "lat": 18.798743,
@@ -78,6 +85,7 @@ class Locations
                 "name": "Bangkok",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "hideLine": true,
                 "coordinates": {
                     "lat": 13.690238,
@@ -89,6 +97,7 @@ class Locations
                 "name": "Vientiane",
                 "country": "Laos",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 17.986967,
                     "lng": 102.567794
@@ -99,6 +108,7 @@ class Locations
                 "name": "Vang Vieng",
                 "country": "Laos",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 18.947304,
                     "lng": 102.447513
@@ -109,6 +119,7 @@ class Locations
                 "name": "Luang Prabang",
                 "country": "Laos",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 19.884847,
                     "lng": 102.137962
@@ -119,6 +130,7 @@ class Locations
                 "name": "Hanoi",
                 "country": "Vietnam",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 21.027463,
                     "lng": 105.700739
@@ -129,6 +141,7 @@ class Locations
                 "name": "Sa Pa",
                 "country": "Vietnam",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 22.357358,
                     "lng": 103.821707
@@ -139,6 +152,7 @@ class Locations
                 "name": "Ha Long",
                 "country": "Vietnam",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 20.971314,
                     "lng": 107.044734
@@ -149,6 +163,7 @@ class Locations
                 "name": "Hanoi",
                 "country": "Vietnam",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 21.027463,
                     "lng": 105.700739
@@ -159,6 +174,7 @@ class Locations
                 "name": "Phú Quốc",
                 "country": "Vietnam",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 10.299451,
                     "lng": 103.984889
@@ -169,6 +185,7 @@ class Locations
                 "name": "Ho Chi Minh City",
                 "country": "Vietnam",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 10.833258,
                     "lng": 106.630088
@@ -179,6 +196,7 @@ class Locations
                 "name": "Phnom Penh",
                 "country": "Cambodia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 11.582391,
                     "lng": 104.858257
@@ -189,6 +207,7 @@ class Locations
                 "name": "Siem Reap",
                 "country": "Cambodia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 13.366145,
                     "lng": 103.837100
@@ -199,6 +218,7 @@ class Locations
                 "name": "Kuala Lumpur",
                 "country": "Malaysia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 3.149072,
                     "lng": 101.689837
@@ -209,6 +229,7 @@ class Locations
                 "name": "Phuket",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 7.882328,
                     "lng":  98.392311
@@ -219,6 +240,7 @@ class Locations
                 "name": "Ko Yao Noi",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 8.122405,
                     "lng":  98.606299
@@ -229,6 +251,7 @@ class Locations
                 "name": "Ao Nang",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 8.030061,
                     "lng":  98.823828
@@ -239,6 +262,7 @@ class Locations
                 "name": "Koh Samui",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 9.513446,
                     "lng":  100.016862
@@ -249,6 +273,7 @@ class Locations
                 "name": "Bangkok",
                 "country": "Thailand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 13.690238,
                     "lng": 100.750123
@@ -259,6 +284,7 @@ class Locations
                 "name": "Osaka",
                 "country": "Japan",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 34.691976,
                     "lng": 135.503544
@@ -269,6 +295,7 @@ class Locations
                 "name": "Kyoto",
                 "country": "Japan",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 35.001510,
                     "lng": 135.749081
@@ -279,6 +306,7 @@ class Locations
                 "name": "Tokyo",
                 "country": "Japan",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 35.691044,
                     "lng": 139.769722
@@ -289,6 +317,7 @@ class Locations
                 "name": "Sydney",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -33.868797,
                     "lng": 151.208218
@@ -299,6 +328,7 @@ class Locations
                 "name": "Katoomba",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -33.712851,
                     "lng": 150.310566
@@ -309,6 +339,7 @@ class Locations
                 "name": "Sydney",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -33.868797,
                     "lng": 151.208218
@@ -319,6 +350,7 @@ class Locations
                 "name": "Melbourne",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -37.809668,
                     "lng": 144.965217
@@ -329,6 +361,7 @@ class Locations
                 "name": "Geelong",
                 "country": "Australia",
                 "stay": false,
+                "visited": true,
                 "coordinates": {
                     "lat": -38.147683,
                     "lng": 144.352822
@@ -339,6 +372,7 @@ class Locations
                 "name": "Davenport",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.179704,
                     "lng": 146.347846
@@ -349,6 +383,7 @@ class Locations
                 "name": "Somerset",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.041021,
                     "lng": 145.831793
@@ -359,6 +394,7 @@ class Locations
                 "name": "Queenstown",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -42.081105,
                     "lng": 145.551825
@@ -369,6 +405,7 @@ class Locations
                 "name": "Hobart",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -42.880467,
                     "lng": 147.328882
@@ -379,6 +416,7 @@ class Locations
                 "name": "Launceston",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.433188,
                     "lng": 147.142942
@@ -389,6 +427,7 @@ class Locations
                 "name": "Davenport",
                 "country": "Australia",
                 "stay": false,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.179704,
                     "lng": 146.347846
@@ -399,6 +438,7 @@ class Locations
                 "name": "Geelong",
                 "country": "Australia",
                 "stay": false,
+                "visited": true,
                 "coordinates": {
                     "lat": -38.147683,
                     "lng": 144.352822
@@ -409,6 +449,7 @@ class Locations
                 "name": "Melbourne",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -37.809668,
                     "lng": 144.965217
@@ -419,6 +460,7 @@ class Locations
                 "name": "Apollo Bay",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -38.755503,
                     "lng": 143.668192
@@ -429,6 +471,7 @@ class Locations
                 "name": "Warrnambool",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -38.372590,
                     "lng": 142.478659
@@ -439,6 +482,7 @@ class Locations
                 "name": "Stawell",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -37.055942,
                     "lng": 142.773454
@@ -449,6 +493,7 @@ class Locations
                 "name": "Melbourne",
                 "country": "Australia",
                 "stay": false,
+                "visited": true,
                 "coordinates": {
                     "lat": -37.809668,
                     "lng": 144.965217
@@ -459,6 +504,7 @@ class Locations
                 "name": "Adelaide",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -34.927051,
                     "lng": 138.602233
@@ -469,6 +515,7 @@ class Locations
                 "name": "Alice Springs",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -23.697860,
                     "lng": 133.880666
@@ -479,6 +526,7 @@ class Locations
                 "name": "Darwin",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -12.432270,
                     "lng": 130.917687
@@ -489,6 +537,7 @@ class Locations
                 "name": "Cairns",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -16.893619,
                     "lng": 145.732039
@@ -499,6 +548,7 @@ class Locations
                 "name": "Brisbane",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -27.495211,
                     "lng": 153.049461
@@ -509,6 +559,7 @@ class Locations
                 "name": "Mooloolaba",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -26.681836,
                     "lng": 153.120533
@@ -519,6 +570,7 @@ class Locations
                 "name": "Sydney",
                 "country": "Australia",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -33.868797,
                     "lng": 151.208218
@@ -529,6 +581,7 @@ class Locations
                 "name": "Auckland",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -36.851790,
                     "lng": 174.764450
@@ -539,6 +592,7 @@ class Locations
                 "name": "Rotorua",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -38.132972,
                     "lng": 176.255513
@@ -549,6 +603,7 @@ class Locations
                 "name": "Otorohanga",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -38.182491,
                     "lng": 175.214997
@@ -559,6 +614,7 @@ class Locations
                 "name": "New Plymouth",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -39.042809,
                     "lng": 174.111826
@@ -569,6 +625,7 @@ class Locations
                 "name": "Napier",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -39.510526,
                     "lng": 176.879696
@@ -579,6 +636,7 @@ class Locations
                 "name": "Cambridge",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -37.890365,
                     "lng": 175.472965
@@ -589,6 +647,7 @@ class Locations
                 "name": "Auckland",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -36.851790,
                     "lng": 174.764450
@@ -599,6 +658,7 @@ class Locations
                 "name": "Wellington",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.291894,
                     "lng": 174.781377
@@ -609,6 +669,7 @@ class Locations
                 "name": "Picton",
                 "country": "New Zealand",
                 "stay": false,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.294959,
                     "lng": 174.002559
@@ -619,6 +680,7 @@ class Locations
                 "name": "Punakaiki",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -42.124140,
                     "lng": 171.330621
@@ -629,6 +691,7 @@ class Locations
                 "name": "Fox Glacier",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -43.463212,
                     "lng": 170.007118
@@ -639,6 +702,7 @@ class Locations
                 "name": "Wanaka",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -44.695875,
                     "lng": 169.141689
@@ -649,6 +713,7 @@ class Locations
                 "name": "Queenstown",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -45.028488,
                     "lng": 168.659849
@@ -659,6 +724,7 @@ class Locations
                 "name": "Twizel",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -44.261533,
                     "lng": 170.088743
@@ -669,6 +735,7 @@ class Locations
                 "name": "Christchurch",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -43.530564,
                     "lng": 172.627153
@@ -679,6 +746,7 @@ class Locations
                 "name": "Kaikōura",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -42.397673,
                     "lng": 173.677165
@@ -689,6 +757,7 @@ class Locations
                 "name": "Picton",
                 "country": "New Zealand",
                 "stay": false,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.294959,
                     "lng": 174.002559
@@ -699,6 +768,7 @@ class Locations
                 "name": "Wellington",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -41.291894,
                     "lng": 174.781377
@@ -709,6 +779,7 @@ class Locations
                 "name": "Auckland",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -36.851790,
                     "lng": 174.764450
@@ -719,6 +790,7 @@ class Locations
                 "name": "Rarotonga",
                 "country": "Cook Islands",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -21.230702,
                     "lng": -159.776438
@@ -729,6 +801,7 @@ class Locations
                 "name": "Auckland",
                 "country": "New Zealand",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": -36.851790,
                     "lng": 174.764450
@@ -739,6 +812,7 @@ class Locations
                 "name": "Vancouver",
                 "country": "Canada",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 49.282489,
                     "lng": -123.130942
@@ -749,6 +823,7 @@ class Locations
                 "name": "Toronto",
                 "country": "Canada",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 43.656671,
                     "lng": -79.383551
@@ -759,6 +834,7 @@ class Locations
                 "name": "Paris",
                 "country": "France",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 48.856257,
                     "lng": 2.350468
@@ -769,6 +845,7 @@ class Locations
                 "name": "Menorca",
                 "country": "Spain",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 39.950784,
                     "lng": 4.106663
@@ -779,6 +856,7 @@ class Locations
                 "name": "Barcelona",
                 "country": "Spain",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 41.386228,
                     "lng": 2.171774
@@ -789,6 +867,7 @@ class Locations
                 "name": "Andorra la Vella",
                 "country": "Andorra",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 42.506651,
                     "lng": 1.521610
@@ -799,6 +878,7 @@ class Locations
                 "name": "Toulouse",
                 "country": "France",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 43.604556,
                     "lng": 1.444000
@@ -809,6 +889,7 @@ class Locations
                 "name": "Marseille",
                 "country": "France",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 43.297719,
                     "lng": 5.376516
@@ -819,6 +900,7 @@ class Locations
                 "name": "Nice",
                 "country": "France",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 43.711355,
                     "lng": 7.265168
@@ -829,6 +911,8 @@ class Locations
                 "name": "Monaco",
                 "country": "Monaco",
                 "stay": false,
+                "visited": true,
+                "hideLine": true,
                 "coordinates": {
                     "lat": 43.737262,
                     "lng": 7.420659
@@ -839,6 +923,7 @@ class Locations
                 "name": "Nice",
                 "country": "France",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 43.711355,
                     "lng": 7.265168
@@ -849,6 +934,7 @@ class Locations
                 "name": "Turin",
                 "country": "Italy",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 45.070835,
                     "lng": 7.650038
@@ -859,6 +945,7 @@ class Locations
                 "name": "Milan",
                 "country": "Italy",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 45.474411,
                     "lng": 9.174470
@@ -869,11 +956,68 @@ class Locations
                 "name": "Venice",
                 "country": "Italy",
                 "stay": true,
+                "visited": true,
                 "coordinates": {
                     "lat": 45.441533,
                     "lng": 12.325523
                 },
                 "date": "2023-08-12",
+            },
+            {
+                "name": "Florence",
+                "country": "Italy",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 43.781073,
+                    "lng": 11.248349
+                },
+                "date": "2023-08-15",
+            },
+            {
+                "name": "Rome",
+                "country": "Italy",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 41.907172,
+                    "lng": 12.470782
+                },
+                "date": "2023-08-19",
+            },
+            {
+                "name": "Oslo",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 59.916475,
+                    "lng": 10.750776
+                },
+                "date": "2023-08-24",
+            },
+            {
+                "name": "Stavanger",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 58.969694,
+                    "lng": 5.728056
+                },
+                "date": "2023-08-25",
+            },
+            {
+                "name": "Oslo",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "hideLine": true,
+                "coordinates": {
+                    "lat": 59.916475,
+                    "lng": 10.750776
+                },
+                "date": "2023-08-29",
             },
         ];
     }

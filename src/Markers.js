@@ -143,13 +143,14 @@ class Markers
         for (let location of this.locations.list) {
             if (
                 !countries.includes(location.country) &&
-                location.stay === true &&
+                location.visited === true &&
                 !this.isFuture(location.date) &&
                 location.country !== 'United Kingdom'
             ) {
                 countries.push(location.country);
             }
         }
+        console.log(countries)
 
         return countries;
     }

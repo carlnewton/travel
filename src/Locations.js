@@ -986,6 +986,28 @@ class Locations
                 "date": "2023-08-19",
             },
             {
+                "name": "Vatican City",
+                "country": "Vatican City",
+                "stay": false,
+                "visited": true,
+                "coordinates": {
+                    "lat": 41.903536,
+                    "lng": 12.453295
+                },
+                "date": "2023-08-23",
+            },
+            {
+                "name": "Rome",
+                "country": "Italy",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 41.907172,
+                    "lng": 12.470782
+                },
+                "date": "2023-08-23",
+            },
+            {
                 "name": "Oslo",
                 "country": "Norway",
                 "stay": true,

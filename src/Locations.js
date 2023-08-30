@@ -1041,6 +1041,40 @@ class Locations
                 },
                 "date": "2023-08-29",
             },
+            {
+                "name": "Bergen",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 60.388604,
+                    "lng": 5.328233
+                },
+                "date": "2023-09-01",
+            },
+            {
+                "name": "Oslo",
+                "country": "Norway",
+                "stay": false,
+                "visited": false,
+                "hideLine": true,
+                "coordinates": {
+                    "lat": 59.916475,
+                    "lng": 10.750776
+                },
+                "date": "2023-09-04",
+            },
+            {
+                "name": "Tromso",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 69.675667,
+                    "lng": 18.931747
+                },
+                "date": "2023-09-04",
+            }
         ];
     }
 }

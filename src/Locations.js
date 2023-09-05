@@ -1074,7 +1074,42 @@ class Locations
                     "lng": 18.931747
                 },
                 "date": "2023-09-04",
-            }
+            },
+            {
+                "name": "Longyearbyen",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 78.223055,
+                    "lng": 15.631056
+                },
+                "date": "2023-09-08",
+            },
+            {
+                "name": "Tromso",
+                "country": "Norway",
+                "stay": false,
+                "visited": false,
+                "hideLine": true,
+                "coordinates": {
+                    "lat": 69.675667,
+                    "lng": 18.931747
+                },
+                "date": "2023-09-15",
+            },
+            {
+                "name": "Oslo",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "hideLine": true,
+                "coordinates": {
+                    "lat": 59.916475,
+                    "lng": 10.750776
+                },
+                "date": "2023-09-15",
+            },
         ];
     }
 }

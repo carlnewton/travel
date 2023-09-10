@@ -1110,6 +1110,17 @@ class Locations
                 },
                 "date": "2023-09-15",
             },
+            {
+                "name": "Lillehammer",
+                "country": "Norway",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 61.114981,
+                    "lng": 10.467517
+                },
+                "date": "2023-09-16",
+            },
         ];
     }
 }

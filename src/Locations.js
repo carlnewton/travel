@@ -1121,6 +1121,51 @@ class Locations
                 },
                 "date": "2023-09-16",
             },
+            {
+                "name": "Oslo",
+                "country": "Norway",
+                "stay": false,
+                "visited": true,
+                "hideLine": true,
+                "coordinates": {
+                    "lat": 59.916475,
+                    "lng": 10.750776
+                },
+                "date": "2023-09-20",
+            },
+            {
+                "name": "Vienna",
+                "country": "Austria",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 48.212220,
+                    "lng": 16.348817,
+                },
+                "date": "2023-09-20",
+            },
+            {
+                "name": "Budapest",
+                "country": "Hungary",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 47.499540,
+                    "lng": 19.026276,
+                },
+                "date": "2023-09-24",
+            },
+            {
+                "name": "Bucharest",
+                "country": "Romania",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 44.424341,
+                    "lng": 26.107340,
+                },
+                "date": "2023-09-28",
+            },
         ];
     }
 }

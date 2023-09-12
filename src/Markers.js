@@ -114,7 +114,6 @@ class Markers
         }
 
         return stayedCount - 1; // Excluding home
-
     }
 
     getUniqueLocations() {
@@ -150,7 +149,6 @@ class Markers
                 countries.push(location.country);
             }
         }
-        console.log(countries)
 
         return countries;
     }
@@ -353,30 +351,30 @@ class Markers
 
     // Modified from a method found on StackOverflow! Thanks Masih!
     // https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
-    timeBetween(fromDate, toDate) {
+    timeBetween(fromDate, toDate, forceInterval=null) {
         var seconds = Math.floor((toDate - fromDate) / 1000);
         var interval = seconds / 31536000;
-        if (interval > 1) {
+        if ((interval > 1 && forceInterval === null) || forceInterval === 'year') {
             return Math.floor(interval) + ' year' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 2592000;
-        if (interval > 1) {
+        if ((interval > 1 && forceInterval === null) || forceInterval === 'month') {
             return Math.floor(interval) + ' month' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 86400;
-        if (interval > 1) {
+        if ((interval > 1 && forceInterval === null) || forceInterval === 'day') {
             return Math.floor(interval) + ' day' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 3600;
-        if (interval > 1) {
+        if ((interval > 1 && forceInterval === null) || forceInterval === 'hour') {
             return Math.floor(interval) + ' hour' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 
         interval = seconds / 60;
-        if (interval > 1) {
+        if ((interval > 1 && forceInterval === null) || forceInterval === 'minute') {
             return Math.floor(interval) + ' minute' + ((Math.floor(interval) === 1) ? '' : 's');
         }
 

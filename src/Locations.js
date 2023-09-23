@@ -1145,6 +1145,29 @@ class Locations
                 "date": "2023-09-20",
             },
             {
+                "name": "Bratislava",
+                "country": "Slovakia",
+                "stay": false,
+                "visited": true,
+                "coordinates": {
+                    "lat": 48.146777, 
+                    "lng": 17.116603,
+                },
+                "date": "2023-09-22",
+            },
+            {
+                "name": "Vienna",
+                "country": "Austria",
+                "stay": true,
+                "visited": true,
+                "hideLine": true,
+                "coordinates": {
+                    "lat": 48.212220,
+                    "lng": 16.348817,
+                },
+                "date": "2023-09-22",
+            },
+            {
                 "name": "Budapest",
                 "country": "Hungary",
                 "stay": true,

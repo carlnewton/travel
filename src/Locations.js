@@ -1178,17 +1178,6 @@ class Locations
                 },
                 "date": "2023-09-24",
             },
-            {
-                "name": "Bucharest",
-                "country": "Romania",
-                "stay": true,
-                "visited": true,
-                "coordinates": {
-                    "lat": 44.424341,
-                    "lng": 26.107340,
-                },
-                "date": "2023-09-28",
-            },
         ];
     }
 }

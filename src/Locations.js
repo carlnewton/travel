@@ -1189,6 +1189,39 @@ class Locations
                 },
                 "date": "2023-09-28",
             },
+            {
+                "name": "Dubai",
+                "country": "United Arab Emirates",
+                "stay": false,
+                "visited": false,
+                "coordinates": {
+                    "lat": 25.253252,
+                    "lng": 55.365629,
+                },
+                "date": "2023-10-03"
+            },
+            {
+                "name": "Bangkok",
+                "country": "Thailand",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 13.690238,
+                    "lng": 100.750123
+                },
+                "date": "2023-10-04",
+            },
+            {
+                "name": "Seoul",
+                "country": "South Korea",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 37.552356,
+                    "lng": 126.987872 
+                },
+                "date": "2023-10-06",
+            },
         ];
     }
 }

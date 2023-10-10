@@ -1222,6 +1222,17 @@ class Locations
                 },
                 "date": "2023-10-06",
             },
+            {
+                "name": "Busan",
+                "country": "South Korea",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 35.171947,
+                    "lng": 129.048424
+                },
+                "date": "2023-10-12",
+            },
         ];
     }
 }

@@ -1233,6 +1233,28 @@ class Locations
                 },
                 "date": "2023-10-12",
             },
+            {
+                "name": "Jeonju",
+                "country": "South Korea",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 35.835883,
+                    "lng": 127.124187
+                },
+                "date": "2023-10-16",
+            },
+            {
+                "name": "Seoul",
+                "country": "South Korea",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 37.552356,
+                    "lng": 126.987872
+                },
+                "date": "2023-10-19",
+            },
         ];
     }
 }

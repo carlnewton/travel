@@ -1255,6 +1255,28 @@ class Locations
                 },
                 "date": "2023-10-19",
             },
+            {
+                "name": "Manila",
+                "country": "Philippines",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 14.601647,
+                    "lng": 120.980675
+                },
+                "date": "2023-10-20",
+            },
+            {
+                "name": "El Nido",
+                "country": "Philippines",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 11.193963,
+                    "lng": 119.417069
+                },
+                "date": "2023-10-21",
+            },
         ];
     }
 }

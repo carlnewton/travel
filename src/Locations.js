@@ -1277,6 +1277,28 @@ class Locations
                 },
                 "date": "2023-10-21",
             },
+            {
+                "name": "Manila",
+                "country": "Philippines",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 14.601647,
+                    "lng": 120.980675
+                },
+                "date": "2023-11-04",
+            },
+            {
+                "name": "Singapore",
+                "country": "Singapore",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 1.282079,
+                    "lng": 103.838756
+                },
+                "date": "2023-11-05",
+            },
         ];
     }
 }

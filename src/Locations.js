@@ -1299,6 +1299,17 @@ class Locations
                 },
                 "date": "2023-11-05",
             },
+            {
+                "name": "Perth",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -31.940044, 
+                    "lng": 115.865090
+                },
+                "date": "2023-11-10",
+            },
         ];
     }
 }

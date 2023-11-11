@@ -1310,6 +1310,28 @@ class Locations
                 },
                 "date": "2023-11-10",
             },
+            {
+                "name": "Bunbury",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -33.326190, 
+                    "lng": 115.639748
+                },
+                "date": "2023-11-15",
+            },
+            {
+                "name": "Margaret River",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -33.966501,
+                    "lng": 115.046129
+                },
+                "date": "2023-11-17",
+            }
         ];
     }
 }

@@ -355,7 +355,27 @@ class Markers
         var seconds = Math.floor((toDate - fromDate) / 1000);
         var interval = seconds / 31536000;
         if ((interval > 1 && forceInterval === null) || forceInterval === 'year') {
-            return Math.floor(interval) + ' year' + ((Math.floor(interval) === 1) ? '' : 's');
+            let years = Math.floor(interval) + ' year' + ((Math.floor(interval) === 1) ? '' : 's')
+            seconds = seconds - Math.floor(interval) * 31536000;
+            interval = seconds / 2592000;
+            let months = Math.floor(interval) + ' month' + ((Math.floor(interval) === 1) ? '' : 's');
+            seconds = seconds - Math.floor(interval) * 2592000;
+            interval = seconds / 86400;
+            let days = Math.floor(interval) + ' day' + ((Math.floor(interval) === 1) ? '' : 's');
+
+            if (months === '0 months' && days === '0 days') {
+                return years;
+            }
+
+            if (months === '0 months') {
+                return years + ' and ' + days;
+            }
+
+            if (days === '0 days') {
+                return years + ' and ' + months;
+            }
+
+            return years + ', ' + months + ' and ' + days;
         }
 
         interval = seconds / 2592000;

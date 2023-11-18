@@ -1331,6 +1331,28 @@ class Locations
                     "lng": 115.046129
                 },
                 "date": "2023-11-17",
+            },
+            {
+                "name": "Pemberton",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -34.445487, 
+                    "lng": 116.033176
+                },
+                "date": "2023-11-19",
+            },
+            {
+                "name": "Albany",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -35.026994, 
+                    "lng": 117.883554
+                },
+                "date": "2023-11-21",
             }
         ];
     }

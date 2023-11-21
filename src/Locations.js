@@ -1353,6 +1353,28 @@ class Locations
                     "lng": 117.883554
                 },
                 "date": "2023-11-21",
+            },
+            {
+                "name": "Esperance",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -33.861493,  
+                    "lng": 121.890792
+                },
+                "date": "2023-11-23",
+            },
+            {
+                "name": "Kalgoorlie",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -30.749549, 
+                    "lng": 121.468690
+                },
+                "date": "2023-11-26",
             }
         ];
     }

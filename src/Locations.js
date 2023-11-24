@@ -1375,6 +1375,17 @@ class Locations
                     "lng": 121.468690
                 },
                 "date": "2023-11-26",
+            },
+            {
+                "name": "Wave Rock",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -32.443213,   
+                    "lng": 118.897117
+                },
+                "date": "2023-11-28",
             }
         ];
     }

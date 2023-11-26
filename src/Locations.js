@@ -1386,6 +1386,28 @@ class Locations
                     "lng": 118.897117
                 },
                 "date": "2023-11-28",
+            },
+            {
+                "name": "York",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -31.874574, 
+                    "lng": 116.769838
+                },
+                "date": "2023-11-30",
+            },
+            {
+                "name": "Cervantes",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -30.501778,
+                    "lng": 115.070637
+                },
+                "date": "2023-12-01",
             }
         ];
     }

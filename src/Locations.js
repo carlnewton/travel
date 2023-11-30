@@ -1408,6 +1408,50 @@ class Locations
                     "lng": 115.070637
                 },
                 "date": "2023-12-01",
+            },
+            {
+                "name": "Kalbarri",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -27.704905, 
+                    "lng": 114.186265
+                },
+                "date": "2023-12-03",
+            },
+            {
+                "name": "Perth",
+                "country": "Australia",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": -31.940044, 
+                    "lng": 115.865090
+                },
+                "date": "2023-12-05",
+            },
+            {
+                "name": "Doha",
+                "country": "Qatar",
+                "stay": false,
+                "visited": false, 
+                "coordinates": {
+                    "lat": 25.289286,
+                    "lng": 51.527102
+                },
+                "date": "2023-12-06",
+            },
+            {
+                "name": "Frankfurt",
+                "country": "Germany",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 50.115708, 
+                    "lng": 8.659909
+                },
+                "date": "2023-12-07",
             }
         ];
     }

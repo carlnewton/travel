@@ -1440,7 +1440,7 @@ class Locations
                     "lat": 25.289286,
                     "lng": 51.527102
                 },
-                "date": "2023-12-06",
+                "date": "2023-12-07",
             },
             {
                 "name": "Frankfurt",
@@ -1452,6 +1452,28 @@ class Locations
                     "lng": 8.659909
                 },
                 "date": "2023-12-07",
+            },
+            {
+                "name": "Berlin",
+                "country": "Germany",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 52.511859, 
+                    "lng": 13.433658
+                },
+                "date": "2023-12-11",
+            },
+            {
+                "name": "Prague",
+                "country": "Czech Republic",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 50.078180,  
+                    "lng": 14.446054
+                },
+                "date": "2023-12-14",
             }
         ];
     }

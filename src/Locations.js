@@ -1474,6 +1474,17 @@ class Locations
                     "lng": 14.446054
                 },
                 "date": "2023-12-14",
+            },
+            {
+                "name": "Dublin",
+                "country": "Ireland",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 53.349535,  
+                    "lng": -6.272483
+                },
+                "date": "2023-12-17",
             }
         ];
     }

@@ -208,10 +208,12 @@ class Markers
             }
         }
 
-        var latestMarker = this.getLatestMarker();
-        var label = latestMarker.getLabel();
-        label.text = latestMarker.labelText;
-        latestMarker.setLabel(label);
+        if (this.getNextMarker) {
+            var latestMarker = this.getLatestMarker();
+            var label = latestMarker.getLabel();
+            label.text = latestMarker.labelText;
+            latestMarker.setLabel(label);
+        }
     }
 
     createMarkers() {

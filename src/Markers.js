@@ -79,6 +79,7 @@ class Markers
         document.getElementById('distance').innerText = Math.round(totalDistance).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " miles";
 
         var firstDate = new Date(this.locations.list[0].date);
+
         document.getElementById('time').innerText = this.timeBetween(firstDate, new Date());
 
         var hoursPassed = Math.floor((new Date() - firstDate) / 1000) / 3600;
@@ -90,6 +91,11 @@ class Markers
         if (nextMarker) {
             var timeUntil = this.timeBetween(new Date(), Date.parse(nextMarker.date))
             document.getElementById('next').innerText = timeUntil;
+        } else {
+            let lastMarker = this.markers[this.markers.length - 1];
+            document.getElementById('time').innerText = this.timeBetween(firstDate, Date.parse(lastMarker.date));
+            let next = document.getElementById('next');
+            next.parentNode.innerHTML = '';
         }
     }
 
@@ -99,7 +105,6 @@ class Markers
 
     getStayedCount() {
         let stayedCount = 0;
-
 
         for (let location of this.getUniqueLocations()) {
             if (this.isFuture(location.date)) {
@@ -289,8 +294,12 @@ class Markers
             previousCoords = location.coordinates;
         }
 
-        var latestMarker = this.getLatestMarker();
-        setInterval(function(){_this.animateMarker(latestMarker)}, 30);
+        var nextMarker = this.getNextMarker();
+
+        if (nextMarker) {
+            var latestMarker = this.getLatestMarker();
+            setInterval(function(){_this.animateMarker(latestMarker)}, 30);
+        }
     }
 
     renderInfoWindowContent(marker) {

@@ -1485,6 +1485,39 @@ class Locations
                     "lng": -6.272483
                 },
                 "date": "2023-12-17",
+            },
+            {
+                "name": "Cork",
+                "country": "Ireland",
+                "stay": true,
+                "visited": true,
+                "coordinates": {
+                    "lat": 51.897284, 
+                    "lng": -8.481163
+                },
+                "date": "2023-12-20",
+            },
+            {
+                "name": "Stansted",
+                "country": "United Kingdom",
+                "stay": false,
+                "visited": false,
+                "coordinates": {
+                    "lat": 51.888542, 
+                    "lng": 0.240879
+                },
+                "date": "2023-12-23",
+            },
+            {
+                "name": "Weldon",
+                "country": "United Kingdom",
+                "stay": false,
+                "visited": false,
+                "coordinates": {
+                    "lat": 52.497764, 
+                    "lng": -0.632368
+                },
+                "date": "2023-12-23",
             }
         ];
     }
